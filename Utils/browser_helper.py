@@ -8,11 +8,11 @@ def clean_reports_folder():
     if os.path.exists('reports/videos'):
         shutil.rmtree('reports/videos')
 
-    # Clean screenshots directory
+    # Clean allure directory
     if os.path.exists('allure-results'):
         shutil.rmtree('allure-results')
 
-        # Clean allure directory
+        # Clean screenshots directory
     if os.path.exists('reports/screenshots'):
         shutil.rmtree('reports/screenshots')
 
@@ -48,11 +48,6 @@ def get_browser():
     # Create page
     page = browser_context.new_page()
 
-    # Maximize window using JavaScript
-    # page.evaluate("""() => {
-    #     window.moveTo(0, 0);
-    #     window.resizeTo(screen.availWidth, screen.availHeight);
-    # }""")
 
     # Return all components
     return (page, browser_context, browser, playwright)

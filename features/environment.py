@@ -85,9 +85,5 @@ def after_feature(context, feature):
     except Exception as e:
         print(f"Wait error in after_feature: {str(e)}")
 
-# def after_all(context):
-#     # Add a delay to ensure everything finishes
-#     time.sleep(2)
-
 
 
